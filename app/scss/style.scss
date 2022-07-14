@@ -5,7 +5,7 @@
 @import 'global';
 
 .header {
-    background:#2C343F;
+    background: $background2;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -36,7 +36,7 @@
 
     &__link {
         @extend %main-font;
-        color: $default;
+        color: $color;
         font-size: 16px;
         line-height: 20px;
     }
@@ -51,25 +51,25 @@
 .phone {
     font-size: 16px;
     line-height: 20px;
-    color: $default;
+    color: $color;
     padding-left: 24px;
-    background: url(../images/phone.svg) no-repeat 0% 50%;
+    background: url(../images/phone-icon.svg) no-repeat 0% 50%;
 }
 
 .email {
     font-size: 16px;
     line-height: 20px;
-    color: $default;
+    color: $color;
     padding-left: 24px;
-    background: url(../images/envelop.svg) no-repeat 0% 50%;
+    background: url(../images/envelop-icon.svg) no-repeat 0% 50%;
 }
 
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.3fr 0.2fr;
-    background: #1F2833;
-    color: #C5C6C7;
+    //background: #1F2833;
+    color: $color;
     padding-bottom: 10px;
     &__title {
         grid-column: 1;
@@ -78,6 +78,7 @@
         font-weight: 400;
         font-size: 48px;
         line-height: 59px;
+        color: $color;
     }
     &__discription {
         grid-column: 1;
@@ -115,31 +116,21 @@
     align-items: center;
     margin-top: 12px;
 }
-.dot1 {
+
+.dot {
     width: 19px;
     height: 19px;
     margin-right: 17px;
     border-radius: 50%;
-    background: #D9D9D9;
+    border: 2px solid $color;
     cursor: pointer;
+    &--active {
+        background: $color;
+    }
+
 }
-.dot2 {
-    width: 19px;
-    height: 19px;
-    margin-right: 17px;
-    border-radius: 50%;
-    border: 1px solid #D9D9D9;
-    cursor: pointer;
-}
-.dot3 {
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    border: 1px solid #D9D9D9;
-    cursor: pointer;
-}
+
 .main-menu {
-    background: #1F2833;
     padding-top: 49px;
     padding-bottom: 78px;
     &__list {
@@ -170,13 +161,11 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 72px;
-    background: #1F2833;
     &__title {
         font-weight: 400;
         font-size: 36px;
         margin-bottom: 37px;
         line-height: 44px;
-        color: #FFFFFF;
     }
     &__cards {
         display: flex;
@@ -205,11 +194,9 @@
     font-size: 24px;
     line-height: 29px;
     text-align: center;
-    color: #FFFFFF;
 }
 
 .brands {
-    background: #1F2833;
     padding-bottom: 85px;
     &__title {
         font-weight: 400;
@@ -235,23 +222,22 @@
         justify-content: center;
         align-items: center;
         border: 1px solid #56D8CE;
+        border-radius: 5px;
         font-size: 24px;
         line-height: 29px;
-        color: #FFFFFF;
+        color: $color;
     }
 }
 
 .main__inner {
     padding: 51px 0;
-    background: #1F2833;
-    color: $default;
 }
 .breadcrumbs {
     margin: 0 0 45px 74px;
     &__link {
     font-size: 14px;
     line-height: 17px;
-    color: $default;
+    color: #bfb7b7;
     }
 }
 .content {
@@ -288,7 +274,6 @@
     margin: 65px 58px 0 78px;
     display: flex;
     justify-content: space-between;
-    //column-gap: 92px;
     &__title {
         font-weight: 400;
         font-size: 36px;
@@ -309,12 +294,12 @@
         text-align: center;
         font-size: 16px;
         line-height: 20px;
-        color: $default;
+        color: $color;
     }
 }
 
 .footer {
-    background: #2C343F;
+    background: $background2;
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -327,7 +312,6 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
-        color: #FFFFFF;
     }
     &__item {
         margin-left: 15px;
@@ -336,6 +320,6 @@
     &__link {
         font-size: 14px;
         line-height: 17px;
-        color: #FFFFFF;
+        color: $color;
     }
 }
