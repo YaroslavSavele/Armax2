@@ -565,6 +565,7 @@ a:hover {
           align-items: center;
   background-color: #a3e6e0;
   border: 2px solid #4B4444;
+  border-radius: 5px;
 }
 
 .driver-card__title {
