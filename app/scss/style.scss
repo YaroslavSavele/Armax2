@@ -102,6 +102,7 @@
         line-height: 20px;
         color: #56D8CE;
         border: 1px solid #56D8CE;
+        border-radius: 5px;
     }
     &__slider {
         grid-column: 2;
@@ -131,14 +132,13 @@
 }
 
 .main-menu {
-    padding-top: 49px;
-    padding-bottom: 78px;
+    padding: 49px 50px 78px 0;
     &__list {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
     &__item {
-        margin-left: 107px;
+        //margin-left: 107px;
     }
     &__link {
         display: block;
@@ -147,6 +147,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 5px;
         background: #56D8CE;
         font-size: 16px;
         line-height: 20px;

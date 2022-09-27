@@ -249,6 +249,7 @@ a:hover {
   line-height: 20px;
   color: #56D8CE;
   border: 1px solid #56D8CE;
+  border-radius: 5px;
 }
 
 .hero__slider {
@@ -287,21 +288,15 @@ a:hover {
 }
 
 .main-menu {
-  padding-top: 49px;
-  padding-bottom: 78px;
+  padding: 49px 50px 78px 0;
 }
 
 .main-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main-menu__item {
-  margin-left: 107px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .main-menu__link {
@@ -317,6 +312,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 5px;
   background: #56D8CE;
   font-size: 16px;
   line-height: 20px;
